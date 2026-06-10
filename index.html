@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustafa Saleem — Cybersecurity Engineer & Backend Developer</title>
+  <meta name="description" content="Portfolio of Mustafa Saleem — Cybersecurity Engineering student, backend developer, and database enthusiast. Building secure systems and hunting vulnerabilities.">
+  <meta property="og:title" content="Mustafa Saleem — Portfolio">
+  <meta property="og:description" content="Cybersecurity Engineering Student | Backend Developer | Database Enthusiast">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0e17">
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-glitch" data-text="Mustafa.dev">Mustafa.dev</div>
+      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+      <p class="preloader-text">Initializing secure connection...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- CRT Scanline + Noise Overlay -->
+  <div class="crt-overlay"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">Mustafa<span>.dev</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting reveal">// welcome to my portfolio</p>
+      <h1 class="hero-name reveal reveal-delay-1">
+        <span class="glitch" data-text="Mustafa Saleem">Mustafa Saleem</span>
+      </h1>
+      <div class="hero-role reveal reveal-delay-2">
+        <span id="typing-text"></span><span class="typing-cursor"></span>
+      </div>
+      <p class="hero-tagline reveal reveal-delay-3">
+        Building secure & scalable systems. Exploring the intersection of cybersecurity, backend development, and database engineering.
+      </p>
+      <div class="hero-cta reveal reveal-delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="https://github.com/qxzy-24" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-label reveal"><span class="section-num">01.</span> About Me</span>
+          <h2 class="section-title reveal reveal-delay-1">Building the future,<br>one system at a time.</h2>
+          <p class="reveal reveal-delay-2">
+            I'm <span class="highlight">Mustafa Saleem</span>, a Cybersecurity Engineering student with a deep passion for 
+            <span class="highlight">backend development</span>, <span class="highlight">database design</span>, and 
+            <span class="highlight">application security</span>. I thrive on building reliable systems and breaking down 
+            complex problems into elegant solutions.
+          </p>
+          <p class="reveal reveal-delay-3">
+            From designing normalized database schemas to developing AI-powered security bots, I'm constantly exploring 
+            the intersection of software engineering and cybersecurity. Currently pursuing my Bachelor's degree and actively 
+            seeking internship opportunities and collaborative projects.
+          </p>
+          <div class="about-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2027</span>
+              <span class="stat-label">Graduating</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal reveal-delay-3">
+          <div class="about-avatar-frame">
+            <div class="about-avatar">
+              <div class="terminal-avatar">
+                <div class="terminal-header">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <span class="terminal-title">mustafa@kali:~</span>
+                </div>
+                <div class="terminal-body">
+                  <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+                  <p class="t-output">mustafa.saleem</p>
+                  <p><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></p>
+                  <p class="t-output">cybersec | backend | db</p>
+                  <p><span class="t-prompt">$</span> <span class="t-cmd">status</span></p>
+                  <p class="t-output t-accent">● open to work</p>
+                  <p><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <span class="section-label reveal"><span class="section-num">02.</span> What I Work With</span>
+      <h2 class="section-title reveal reveal-delay-1">Skills & Technologies</h2>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-icon">💻</div>
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <!-- Databases & Backend -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">🛢️</div>
+          <h3 class="skill-category-title">Databases & Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Auth Systems</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Tools -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-icon">🧰</div>
+          <h3 class="skill-category-title">Frameworks & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Antigravity</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="skill-category reveal reveal-delay-4">
+          <div class="skill-category-icon">🔒</div>
+          <h3 class="skill-category-title">Cybersecurity</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">Pen Testing</span>
+            <span class="skill-tag">Vulnerability Research</span>
+            <span class="skill-tag">Packet Analysis</span>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skill-category reveal reveal-delay-5">
+          <div class="skill-category-icon">🌐</div>
+          <h3 class="skill-category-title">Networking</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">ACL</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Cisco Packet Tracer</span>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="skill-category reveal reveal-delay-6">
+          <div class="skill-category-icon">🧠</div>
+          <h3 class="skill-category-title">Core Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">OS Fundamentals</span>
+            <span class="skill-tag">Database Design</span>
+            <span class="skill-tag">OOP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <span class="section-label reveal"><span class="section-num">03.</span> Featured Work</span>
+      <h2 class="section-title reveal reveal-delay-1">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- GitHub Scout Bot -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <div class="project-links">
+              <a href="https://github.com/qxzy-24/github-scout-bot" target="_blank" rel="noopener" aria-label="View GitHub Scout Bot on GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">GitHub Scout Bot</h3>
+          <p class="project-desc">An autonomous AI-powered Telegram bot that hunts for security vulnerabilities, code quality issues, and architecture flaws across GitHub repositories — then reports them straight to your chat.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Telegram API</span>
+            <span class="tech-tag">AI/LLM</span>
+            <span class="tech-tag">GitHub API</span>
+          </div>
+        </div>
+
+        <!-- SysWatcher -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <span class="project-icon">📡</span>
+            <div class="project-links">
+              <a href="https://github.com/qxzy-24/syswatcher" target="_blank" rel="noopener" aria-label="View SysWatcher on GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">SysWatcher</h3>
+          <p class="project-desc">Lightweight, resilient system monitoring daemon with Telegram alerting. Monitors CPU, memory, disk usage in real-time and pushes instant alerts when thresholds are breached.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Telegram</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">Monitoring</span>
+          </div>
+        </div>
+
+        <!-- Unfound Registry -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-header">
+            <span class="project-icon">🖼️</span>
+            <div class="project-links">
+              <a href="https://github.com/qxzy-24/Unfound_Registry_Project" target="_blank" rel="noopener" aria-label="View Unfound Registry on GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Unfound Registry</h3>
+          <p class="project-desc">A full-stack web application that enables collectors, institutions, and law enforcement to catalog missing artwork, search a shared database, and generate AI-powered sighting reports.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">AI</span>
+            <span class="tech-tag">Full-Stack</span>
+          </div>
+        </div>
+
+        <!-- Open Player -->
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-header">
+            <span class="project-icon">🎵</span>
+            <div class="project-links">
+              <a href="https://github.com/qxzy-24/open_player" target="_blank" rel="noopener" aria-label="View Open Player on GitHub">↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Open Player</h3>
+          <p class="project-desc">A premium, cross-platform music player built with Flutter. Beautiful dark UI with glassmorphism, smooth animations, and full playback controls.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Glassmorphism</span>
+            <span class="tech-tag">Cross-Platform</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <span class="section-label reveal"><span class="section-num">04.</span> Learning Path</span>
+      <h2 class="section-title reveal reveal-delay-1">Education & Certifications</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal reveal-delay-1">
+          <span class="timeline-date">2023 — 2027</span>
+          <h3 class="timeline-title">B.Sc. Cybersecurity Engineering</h3>
+          <p class="timeline-sub">Bachelor's Degree</p>
+          <p class="timeline-desc">Specializing in network security, digital forensics, secure software development, and database management systems.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-2">
+          <span class="timeline-date">In Progress</span>
+          <h3 class="timeline-title">CRTA — Certified Red Team Analyst</h3>
+          <p class="timeline-sub">Advanced Security Certification</p>
+          <p class="timeline-desc">Red team operations, adversary simulation, privilege escalation, and penetration testing methodologies.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-3">
+          <span class="timeline-date">Completed</span>
+          <h3 class="timeline-title">Flutter Development Course</h3>
+          <p class="timeline-sub">Mobile App Development</p>
+          <p class="timeline-desc">Cross-platform mobile development with Flutter, Dart, Firebase integration, and responsive UI design.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-4">
+          <span class="timeline-date">Completed</span>
+          <h3 class="timeline-title">Database Design</h3>
+          <p class="timeline-sub">Self-Study Milestone</p>
+          <p class="timeline-desc">Completed comprehensive courses in database design, management, and optimization.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-5">
+          <span class="timeline-date">Completed · May 2026</span>
+          <h3 class="timeline-title">MATLAB Onramp</h3>
+          <p class="timeline-sub">MathWorks Certification</p>
+          <p class="timeline-desc">Fundamentals of MATLAB programming, data analysis, visualization, and mathematical computation.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-6">
+          <span class="timeline-date">Completed · Aug 2025</span>
+          <h3 class="timeline-title">Cisco — Cyber Threat Management</h3>
+          <p class="timeline-sub">Cisco Networking Academy</p>
+          <p class="timeline-desc">Threat identification, risk assessment, vulnerability management, and incident response frameworks.</p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-7">
+          <span class="timeline-date">Completed · Jul 2025</span>
+          <h3 class="timeline-title">Cisco — Introduction to Cybersecurity</h3>
+          <p class="timeline-sub">Cisco Networking Academy</p>
+          <p class="timeline-desc">Cybersecurity foundations, threat landscape, security operations, and protective technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG / RESEARCH SECTION ===== -->
+  <section class="section" id="blog">
+    <div class="section-inner">
+      <span class="section-label reveal"><span class="section-num">05.</span> Research & Insights</span>
+      <h2 class="section-title reveal reveal-delay-1">Blog / Articles</h2>
+
+      <div class="blog-grid">
+        <div class="blog-card blog-coming-soon reveal reveal-delay-1">
+          <div class="blog-badge"><span class="pulse"></span> Coming Soon</div>
+          <div class="blog-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <p>Article in progress...</p>
+          </div>
+        </div>
+
+        <div class="blog-card blog-coming-soon reveal reveal-delay-2">
+          <div class="blog-badge"><span class="pulse"></span> Coming Soon</div>
+          <div class="blog-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <p>Research coming soon...</p>
+          </div>
+        </div>
+
+        <div class="blog-card blog-coming-soon reveal reveal-delay-3">
+          <div class="blog-badge"><span class="pulse"></span> Coming Soon</div>
+          <div class="blog-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <p>Write-up in the works...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="contact-content">
+        <span class="section-label reveal"><span class="section-num">06.</span> Get In Touch</span>
+        <h2 class="section-title reveal reveal-delay-1">Let's Connect</h2>
+        <p class="reveal reveal-delay-2">
+          Open to internship opportunities, collaborative projects, and interesting conversations about cybersecurity and backend development.
+        </p>
+        <div class="availability-badge reveal reveal-delay-2">
+          <span class="availability-dot"></span>
+          Available for opportunities
+        </div>
+        <div class="contact-links reveal reveal-delay-3">
+          <a href="mailto:eng.mustafasaleem@gmail.com" class="contact-link magnetic" id="contact-email" onclick="window.location.href='mailto:eng.mustafasaleem@gmail.com'; return false;">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+          <a href="https://github.com/qxzy-24" target="_blank" rel="noopener" class="contact-link magnetic" id="contact-github">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mustafa-muthana-8b8383334/" target="_blank" rel="noopener" class="contact-link magnetic" id="contact-linkedin">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">Mustafa<span>.dev</span></a>
+          <p>Cybersecurity Engineer & Backend Developer. Building secure systems and hunting vulnerabilities.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/qxzy-24" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-muthana-8b8383334/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:eng.mustafasaleem@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed & built by <span class="accent">Mustafa Saleem</span> · © 2026</p>
+        <p class="footer-credit">Crafted with precision & passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== EASTER EGG TERMINAL ===== -->
+  <div class="easter-terminal" id="easter-terminal">
+    <div class="easter-terminal-window">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">secret@Mustafa.dev:~</span>
+        <button class="easter-close" id="easter-close">×</button>
+      </div>
+      <div class="easter-terminal-body" id="easter-terminal-body">
+        <p class="t-output" style="color:#28c840">Access granted. Welcome to the hidden terminal.</p>
+        <p class="t-output">Type 'help' for available commands.</p>
+      </div>
+      <div class="easter-input-line">
+        <span class="t-prompt">$</span>
+        <input type="text" id="easter-input" autocomplete="off" spellcheck="false" placeholder="type a command...">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
